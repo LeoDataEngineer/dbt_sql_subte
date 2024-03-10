@@ -1,8 +1,8 @@
 
 
--- {{ config(materialized='view') }} crea una vista
+{{ config(materialized='view') }} crea una vista
 -- {{ config(materialized='table') }} crea una tabla
-{{ config(materialized='incremental') }}
+-- {{ config(materialized='incremental') }} solo procesa los datos nuevos o modificados desde la última ejecución
 
 with data_cte as (
 
