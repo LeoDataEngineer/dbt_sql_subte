@@ -4,9 +4,9 @@ proyecto_001:
       account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
       database: "{{ env_var('SNOWFLAKE_DATABASE') }}"
       password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
-      role: public
+      role: ACCOUNTADMIN
       schema: "{{ env_var('SNOWFLAKE_SCHEMA') }}"
-      threads: 4
+      threads: 1
       type: snowflake
       user: "{{ env_var('SNOWFLAKE_USER') }}"
       warehouse: compute_wh
