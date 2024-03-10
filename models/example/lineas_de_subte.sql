@@ -1,7 +1,8 @@
 
 
-{{ config(materialized='view') }}
-
+-- {{ config(materialized='view') }} crea una vista
+-- {{ config(materialized='table') }} crea una tabla
+{{ config(materialized='incremental') }}
 
 with data_cte as (
 
