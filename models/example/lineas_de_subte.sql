@@ -1,6 +1,6 @@
 
-
-{{ config(materialized='view') }} crea una vista
+-- crea una vista
+{{ config(materialized='view') }} 
 -- {{ config(materialized='table') }} crea una tabla
 -- {{ config(materialized='incremental') }} solo procesa los datos nuevos o modificados desde la última ejecución
 
